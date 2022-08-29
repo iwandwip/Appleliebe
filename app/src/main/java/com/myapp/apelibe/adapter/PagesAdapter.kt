@@ -7,8 +7,9 @@ import android.view.ViewGroup
 import androidx.viewpager.widget.PagerAdapter
 import com.myapp.apelibe.databinding.ItemPageBinding
 import com.myapp.apelibe.model.Page
+import com.myapp.apelibe.model.PartsPage
 
-class PagesAdapter(private val context: Context) : PagerAdapter() {
+class PagesAdapter(private val context: Context): PagerAdapter() {
 
     var pages = mutableListOf<Page>()
         set(value) {
@@ -29,8 +30,12 @@ class PagesAdapter(private val context: Context) : PagerAdapter() {
     }
 
     private fun bindItem(pageBinding: ItemPageBinding, page: Page) {
+        val partsPageAdapter = PartsPageAdapter()
+
+        partsPageAdapter.partsPage = page.partsPage as MutableList<PartsPage>
+
         pageBinding.rvPages.setHasFixedSize(true)
-//        pageBinding.rvPages.adapter
+        pageBinding.rvPages.adapter = partsPageAdapter
     }
 
     override fun destroyItem(container: ViewGroup, position: Int, `object`: Any) =
