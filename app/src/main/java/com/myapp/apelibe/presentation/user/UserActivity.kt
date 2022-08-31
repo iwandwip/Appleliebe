@@ -8,6 +8,7 @@ import com.myapp.apelibe.R
 import com.myapp.apelibe.databinding.ActivityUserBinding
 import com.myapp.apelibe.presentation.changepassword.ChangePasswordActivity
 import com.myapp.apelibe.presentation.login.LoginActivity
+import com.myapp.apelibe.presentation.main.MainActivity
 import org.jetbrains.anko.startActivity
 
 class UserActivity : AppCompatActivity() {
@@ -24,7 +25,10 @@ class UserActivity : AppCompatActivity() {
 
     private fun onAction() {
         userBinding.apply {
-            btnCloseUser.setOnClickListener { finish() }
+            btnCloseUser.setOnClickListener {
+                startActivity<MainActivity>() //Add New
+                finish()
+            }
 
             btnChangeLanguageUser.setOnClickListener {
                 startActivity(Intent(ACTION_LOCALE_SETTINGS))
