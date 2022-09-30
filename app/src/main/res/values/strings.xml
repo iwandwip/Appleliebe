@@ -40,4 +40,14 @@
     <string name="please_field_your_email">Please field your email</string>
     <string name="please_use_valid_email">Please use valid email</string>
     <string name="please_field_your_password">Please field your password</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sistem_monitoring">Sistem Monitoring</string>
+    <string name="tampilan_suhu">Tampilan Suhu</string>
+    <string name="_36_c">36 °C</string>
+    <string name="kelembapan">Kelembapan</string>
+    <string name="_70">70 %</string>
+    <string name="tampilan_ph">Tampilan Ph</string>
+    <string name="ph_7_5">Ph 7.5</string>
+    <string name="transaction">Transaksi</string>
 </resources>

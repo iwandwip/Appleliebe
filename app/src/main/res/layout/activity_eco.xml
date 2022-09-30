@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.eco.EcoActivity">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/transparent"
+            app:elevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/normal_100"
+                android:layout_marginEnd="@dimen/normal_100"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_close_eco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_baseline_close_24" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/normal_100"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/sistem_monitoring"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/normal_275"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageViewSuhu"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="@dimen/normal_100"
+                app:srcCompat="@drawable/temp" />
+
+            <TextView
+                android:id="@+id/tvEditSuhu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/normal_100"
+                android:layout_marginTop="@dimen/small_100"
+                android:fontFamily="@font/proxima_nova_font_bold"
+                android:text="@string/_36_c"
+                android:textColor="@color/independece"
+                android:textSize="@dimen/h4" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tex_view_suhu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="@dimen/small_100"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/tampilan_suhu"
+            android:textColor="@color/independece"
+            android:textSize="@dimen/normal_75"
+            tools:ignore="SpUsage" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/normal_275"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageViewKelembapan"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="@dimen/normal_100"
+                app:srcCompat="@drawable/humidfin" />
+
+            <TextView
+                android:id="@+id/tvEditKelembapan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/normal_100"
+                android:layout_marginTop="@dimen/small_100"
+                android:fontFamily="@font/proxima_nova_font_bold"
+                android:text="@string/_70"
+                android:textColor="@color/independece"
+                android:textSize="@dimen/h4" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tex_view_kelembapan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="@dimen/small_100"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/kelembapan"
+            android:textColor="@color/independece"
+            android:textSize="@dimen/normal_75"
+            tools:ignore="SpUsage" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/normal_275"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageViewPh"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="@dimen/normal_100"
+                app:srcCompat="@drawable/phfin" />
+
+            <TextView
+                android:id="@+id/tvEditPh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/normal_100"
+                android:layout_marginTop="@dimen/small_100"
+                android:fontFamily="@font/proxima_nova_font_bold"
+                android:text="@string/ph_7_5"
+                android:textColor="@color/independece"
+                android:textSize="@dimen/h4" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tex_view_ph"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="@dimen/small_100"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/tampilan_ph"
+            android:textColor="@color/independece"
+            android:textSize="@dimen/normal_75"
+            tools:ignore="SpUsage" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

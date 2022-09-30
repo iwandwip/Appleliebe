@@ -1,6 +1,5 @@
 package com.myapp.apelibe.presentation.main
 
-import android.app.Activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
@@ -11,7 +10,8 @@ import com.myapp.apelibe.R
 import com.myapp.apelibe.adapter.MaterialsAdapter
 import com.myapp.apelibe.databinding.ActivityMainBinding
 import com.myapp.apelibe.presentation.content.ContentActivity
-import com.myapp.apelibe.presentation.splash.SplashActivity
+import com.myapp.apelibe.presentation.eco.EcoActivity
+import com.myapp.apelibe.presentation.shop.ShopActivity
 import com.myapp.apelibe.presentation.user.UserActivity
 import com.myapp.apelibe.repository.Repository
 import org.jetbrains.anko.startActivity
@@ -39,8 +39,8 @@ class MainActivity : AppCompatActivity() {
             when (it.itemId) {
 //                R.id.nav_bottom_home -> startActivity<MainActivity>()
                 R.id.nav_bottom_profile -> startActivity<UserActivity>()
-//                R.id.nav_bottom_eco -> startActivity<>()
-//                R.id.nav_bottom_shop -> startActivity<>()
+                R.id.nav_bottom_eco -> startActivity<EcoActivity>()
+                R.id.nav_bottom_shop -> startActivity<ShopActivity>()
             }
             true
         }
